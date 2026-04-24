@@ -20,10 +20,17 @@ dependencies = [
     "huggingface-hub>=0.23.0",
     "albumentations>=1.4.0",
     "opencv-python-headless>=4.10.0",
+    "eclipse-zenoh>=1.9.0",
+    "opencv-python>=4.13.0.92",
+    "opentelemetry-sdk>=1.24",
+    "opentelemetry-exporter-otlp-proto-grpc>=1.24",
+    "opentelemetry-semantic-conventions>=0.45",
+    "python-dotenv>=1.2.2",
 ]
+[[tool.uv.index]]
+name = "pytorch"
+url = "https://download.pytorch.org/whl/cu121"
 
-[tool.uv]
-package = false
-dev-dependencies = [
-    "pytest>=8.2.0",
-]
+[tool.uv.sources]
+torch = { index = "pytorch" }
+torchvision = { index = "pytorch" }

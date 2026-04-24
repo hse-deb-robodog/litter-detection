@@ -2,8 +2,14 @@
 __pycache__/
 *.pyc
 data/
-mlruns/
-findings.md
+artifacts/mlflow/mlruns/
+auto-research/findings.md
 .DS_Store
+uv.lock
 # generic training checkpoint (named checkpoints are tracked)
-best_model.pth
+models/checkpoints/best_model.pth
+.env
+mlflow.db
+error_analysis/
+
+Notiz
